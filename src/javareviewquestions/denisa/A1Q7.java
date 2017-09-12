@@ -18,6 +18,7 @@ public class A1Q7 {
         int year = 1999;
         // start at the world population and increase by the rate until it reaches the wanted population
         // let 6 represent 6 billion (world population) and 10 represent 10 billion (wanted population)
+        // rate = 1.4 % = 0.014
         for (double i = 6; i < 10; i += i * 0.014) {
             // add one to the year each time the loop is gone through until it stops at the wanted population
             year++;
