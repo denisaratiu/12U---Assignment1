@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author ratid6445
  */
-public class A1Q4 {
+public class A1Q5 {
 
     /**
      * @param args the command line arguments
@@ -24,8 +24,13 @@ public class A1Q4 {
         int number = input.nextInt();
         //create loop that will replace the number inputted with the corresponding amount of asterisks
         for (int numAsterisks = 0; numAsterisks < number; numAsterisks++) {
-            // output asterisks that correspond to the number inputted
-            System.out.print('*');
+            // for loop that groups the asterisks into the amount of lines that the number indicates 
+            for (int i = 0; i < number; i++) {
+                //output the corresponding number of asterisks
+                System.out.print('*');
+            }
+            // make the groups of asterisks appear on different lines
+            System.out.println("");
         }
     }
 }
