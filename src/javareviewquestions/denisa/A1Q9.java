@@ -20,12 +20,19 @@ public class A1Q9 {
         Scanner input = new Scanner(System.in);
         // ask user to input 10 words
         System.out.println("Enter 10 words below: ");
+        // store words in an array
+        String[] words = new String[10];
+        // store the amount of letters in the word into an array
+        int totalCharacters = 0;
         // create a loop that allows user to input 10 words
-        for( int i = 0; i < 10; i++){
-            // get user input
-            String words = input.nextLine();
-            int size = words.length();
+        for( int i = 0; i < words.length; i++){
+            // allow user to input words
+            words[i] = input.next();
+            // count the amount of letters in the word
+            totalCharacters = words[i].length();
+            
         }
+        System.out.println(totalCharacters);
         
     }
 }
