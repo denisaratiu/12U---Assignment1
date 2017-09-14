@@ -24,15 +24,21 @@ public class A1Q9 {
         String[] words = new String[10];
         // store the amount of letters in the word into an array
         int totalCharacters = 0;
+        // store the total letter count
+        int runningTotalCharacters = 0;
         // create a loop that allows user to input 10 words
-        for( int i = 0; i < words.length; i++){
+        for (int i = 0; i < words.length; i++) {
             // allow user to input words
             words[i] = input.next();
             // count the amount of letters in the word
             totalCharacters = words[i].length();
-            
+            // add the total amount of letters from each word together
+            runningTotalCharacters = runningTotalCharacters + totalCharacters;
         }
-        System.out.println(totalCharacters);
-        
+        // get the average word length
+        int average = runningTotalCharacters / 10;
+        // output the average word length
+        System.out.println("The average word length is " + average + " character(s) long.");
+
     }
 }

@@ -22,30 +22,30 @@ public class A1Q3 {
         // ask user to input all expenses
         // input food expense 
         System.out.println("Please enter the food cost below: ");
-        int food = input.nextInt();
+        double food = input.nextDouble();
 
         // user input DJ expense
         System.out.println("Please enter the DJ cost below : ");
-        int DJ = input.nextInt();
+        double DJ = input.nextDouble();
 
         // user input hall rental expense
         System.out.println("Please enter the hall rental cost below: ");
-        int hallRental = input.nextInt();
+        double hallRental = input.nextDouble();
 
         // user input decoration expense
         System.out.println("Please enter the decoration expense below: : ");
-        int decorations = input.nextInt();
+        double decorations = input.nextDouble();
 
         // user input wait staff expense
         System.out.println("Please enter the cost for wait staff below: : ");
-        int staff = input.nextInt();
+        double staff = input.nextDouble();
 
         // user input miscellaneous expense
         System.out.println("Please enter any miscellaneous expenses below: ");
-        int miscellaneous = input.nextInt();
+        double miscellaneous = input.nextDouble();
 
         // calculate the total expenses 
-        int total = food + DJ + hallRental + decorations + staff + miscellaneous;
+        double total = food + DJ + hallRental + decorations + staff + miscellaneous;
         // output the total for all the expenses
         System.out.println("The total cost of all the expenses is $" + total + ".00.");
 
